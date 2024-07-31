@@ -2,64 +2,55 @@
 particlesJS('particles-js', {
   "particles": {
     "number": {
-      "value": 50,
+      "value": 500, // Incrementa el número de partículas para un efecto más denso
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#000000" // Color de las partículas
+      "value": "#ffffff" // Partículas blancas como estrellas
     },
     "shape": {
-      "type": "polygon",
+      "type": "circle", // Estrellas son más adecuadas como círculos
       "stroke": {
         "width": 0,
         "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
       }
     },
     "opacity": {
-      "value": 0.5,
-      "random": false,
+      "value": 1,
+      "random": true, // Opacidad aleatoria para un efecto de profundidad
       "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
+        "enable": true,
+        "speed": 3,
+        "opacity_min": 0,
         "sync": false
       }
     },
     "size": {
       "value": 3,
-      "random": true,
+      "random": true, // Tamaños variados para simular estrellas a diferentes distancias
       "anim": {
         "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
+        "speed": 10,
+        "size_min": 0.3,
         "sync": false
       }
     },
     "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#000000", // Color de las líneas
-      "opacity": 0.6,
-      "width": 1
+      "enable": false // Deshabilitado para un efecto de estrellas más realista
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 0.3, // Velocidad más lenta para un efecto de movimiento más sutil
       "direction": "none",
-      "random": false,
+      "random": true,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
       "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
+        "enable": false
       }
     }
   },
@@ -68,7 +59,7 @@ particlesJS('particles-js', {
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "grab"
       },
       "onclick": {
         "enable": true,
@@ -78,14 +69,14 @@ particlesJS('particles-js', {
     },
     "modes": {
       "grab": {
-        "distance": 400,
+        "distance": 140,
         "line_linked": {
           "opacity": 1
         }
       },
       "bubble": {
         "distance": 400,
-        "size": 40,
+        "size": 100,
         "duration": 2,
         "opacity": 8,
         "speed": 3

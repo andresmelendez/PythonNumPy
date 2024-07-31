@@ -7,7 +7,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #c0bebe, #000000); /* Degradado de color */
+    background: linear-gradient(135deg, #110822, #000000); /* Degradado de color */
     color: #fff;
     font-family: 'Arial', sans-serif;
 }
